@@ -20,11 +20,12 @@
         <div class="navbar-nav">
           <a class="nav-link active" href="{{ url_for('index')}}">Home <span class="sr-only">(current)</span></a>
           <a class="nav-link" href="{{ url_for('about')}}">About</a>
+          <a class="nav-link" href="{{ url_for('subscribe')}}">Subscribe</a>
         
         </div>
       </div>
     </nav>
-
+    <br/>
     {% block content %}content{% endblock %}
 
     <!-- Optional JavaScript; choose one of the two! -->

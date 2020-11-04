@@ -23,6 +23,7 @@ subscribers = []
 @app.route('/delete/<int:id>')
 def delete(id):
   friend_to_delete = Friends.query.get_or_404(id)
+  
   try:
     db.session.delete(friend_to_delete)
     db.session.commit()

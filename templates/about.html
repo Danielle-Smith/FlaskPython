@@ -1,9 +1,23 @@
 {% extends 'base.html' %}
 {% block title %} About {% endblock%}
-{% block content %} 
+{% block content %}
 <div class="container">
-  <h1>About me!</h1> 
-  <br/>
-  <img src="{{ url_for('static', filename='images/IMG_5563.jpeg')}}" width="500">
+  <p style="float: left; padding: 100px 0px; width: 700px">Lori (E-RYT 200, RYT 500) began practicing yoga in 1997 and
+    instantly
+    recognized the
+    countless healing benefits
+    yoga has to offer. In 2014, she completed her RYT 200 Yoga Alliance certification, with an
+    emphasis in Hatha and Vinyasa. She earned her RYT 500 Vinyasa Yoga Alliance certification in
+    2019, specializing in biomechanics, injury management, and smart sequencing. Being a lifelong learner, she continues
+    to study and practice with world-renowned instructors from around the world.
+    She creates a safe, non-competitive space for her students to dive beneath the surface of their daily lives to find
+    deeper meaning and inspiration. Her classes offer creative sequences with intentional themes, emphasizing the
+    importance of proper alignment, pranayama breathing techniques, mindfulness, and meditation.
+
+    Modification and advanced options are made available for new students and experienced yogis so that all can reach
+    their potential. She is honored to teach yoga, helping to bring balance, awareness, health, and happiness into
+    other's lives.</p>
+  <img style="float: right; width: 360px; height: 500px;"
+    src="{{ url_for('static', filename='images/mtntreepose.jpg')}}">
 </div>
 {% endblock %}
